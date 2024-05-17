@@ -1,4 +1,4 @@
 # DOCUMENTAÇÃO EM DESENVOLVIMENTO
 
 ## TIME DE DESENVOLVIMENTO
-Thiago Mota, Lucas Miguel, Kaio, Marcio Maycom
+Thiago Mota, Lucas Miguel, Kayo Vincius, Marcio Maycom
