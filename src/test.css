@@ -1,5 +1,9 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 body {
-    background: linear-gradient(95deg, rgb(73, 73, 206), rgb(153, 72, 153));
+    background: linear-gradient(90deg, #ac68ca, rgb(248, 238, 253));
     margin: 0;
     
   
@@ -14,20 +18,25 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    background-color: rgb(158, 0, 0);
+    text-align: center;
+}
+nav .logo {
+   padding: 0;
+   margin-left: 50px;
 }
 
 nav .logo img {
-    height: 170px;
-    width: 170px;
-    margin: -15px;
+    height: 120px;
+    width: 120px;
+    margin: 5px;
 }
 
 nav .links {
     display: flex;
-    gap: 10px; /* Espaçamento de 5 pixels entre os links */
+    gap: 30px; /* Espaçamento de 5 pixels entre os links */
     position: absolute;
-    right: 10px; /* Distância do canto direito */
+    right: 50px; /* Distância do canto direito */
     top: 10px; /* Distância do canto superior */
 }
 
@@ -35,15 +44,15 @@ nav .link {
     text-decoration: none;
 }
 
-nav .op {
-    color: white;
-    font-size: 29px;
+nav p {
+    color: rgb(255, 255, 255);
+    font-size: 21px;
     padding: 9px;
     transition: 0.3s;
 
 }
 
-nav .op:hover {
+.container .op:hover {
     border-radius: 19px;
     border: solid white 1px;
     background: linear-gradient(50deg, rgb(32, 30, 30), rgb(31, 22, 28));
@@ -53,7 +62,7 @@ nav .op:hover {
 
 }
 
-nav .personas {
+.container .personas {
     border: solid black 1px;
     height: 130px;
     width: 700px;
