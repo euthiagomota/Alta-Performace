@@ -18,12 +18,17 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+<<<<<<< HEAD
     background-color: rgb(158, 0, 0);
     text-align: center;
 }
 nav .logo {
    padding: 0;
    margin-left: 50px;
+=======
+    background-color: black;
+    
+>>>>>>> feature/about
 }
 
 nav .logo img {
@@ -81,5 +86,5 @@ nav .personas:hover{
 }
 
 nav .descrição{
-    color: black;
+    color: rgb(39, 39, 39);
 }
