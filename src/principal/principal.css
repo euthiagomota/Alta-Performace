@@ -8,10 +8,67 @@
 }
 
 body {
-    background: linear-gradient(90deg, rgb(255, 255, 255), rgb(116, 44, 147));
-    min-height: 100vh;
+    background-image: url(../assets/backpurple.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
     display: flex;
     flex-direction: column;
+    transition: background 0.2s linear;
+}
+
+body.dark {
+    background: #232c35;
+}
+
+.checkbox{
+    opacity: 0;
+    position: absolute;
+}
+
+.label{
+    background-color: #111;
+    border-radius: 50px;
+    cursor:pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 5px;
+    position: relative;
+    height: 25px;
+    width: 50px;
+    left: 1800px;
+
+    transform: scale(1.5);
+}
+
+.label .ball{
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+
+    height: 22px;
+    width: 22px;
+
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball{
+    transform: translateX(24px);
+}
+
+.fa-moon{
+    color: #f1c40f;
+}
+
+.fa-sun{
+
+    color: #f39c12;
 }
 
 header nav {
@@ -39,23 +96,19 @@ header nav li {
 
 header nav li a {
     text-decoration: none;
-    color: #fff;
     font-size: 18px;
     font-weight: 500;
     padding: 8px 15px;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-#cadastro {
-    background-color: rgb(116, 44, 147);
-    padding: 10px 15px;
-    border-radius: 20px;
-    text-align: center;
+    border-radius: 15px;
+    transition: 0.4s;
+    color: rgb(217, 127, 255);
 }
 
 header nav li a:hover {
-    color: rgb(217, 127, 255);
+    color: #202020;
+    border: solid rgba(153, 112, 112, 0.192) 0px;
+    border-radius: 15px;
+    background-color: rgb(135, 16, 204);
 }
 
 .banner {
@@ -67,15 +120,15 @@ header nav li a:hover {
 
 main {
     flex: 1;
-    padding: 50px 3%;
+    padding: 50px;
 }
 
 main h1 {
     font-size: 40px;
     margin-bottom: 20px;
-    color: #333;
-    margin-top: -200px;
-
+    color: white;
+    margin-top: -330px;
+    display: flex;
     padding: 50px;
 }
 
@@ -89,16 +142,18 @@ main .separados {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #fff;
     border-radius: 15px;
-    padding: 20px;
+    padding: 0px;
+    background-color: black;
     max-width: 300px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+    box-shadow: 0.4s;
+    transition: 0.4s;
+    margin-left: 55px;
 }
 
 .profile:hover {
-    transform: scale(1.05);
+    transform: translatey(-8px);
+    box-shadow: 20px 20px 50px rgb(21, 141, 174);
 }
 
 .profile img {
@@ -115,9 +170,15 @@ main .separados {
 .profile h2 {
     font-size: 24px;
     margin-bottom: 10px;
+    color: #666;
 }
 
 .profile p {
     font-size: 16px;
     color: #666;
 }
+
+main .separados .links {
+    text-decoration: none;
+}
+
