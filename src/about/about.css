@@ -14,15 +14,16 @@ body {
 
     display: flex;
     flex-direction: column;
-    transition: background 0.2s linear;
+    transition: background 0.6s linear;
 }
 
 body.dark {
-    background-image: url(../assets/backdark.png);
-    background-repeat: no-repeat;
+    background-image: url(../assets/darkmode.png);
     background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
-    transition: background 0.2s linear;
+    flex-direction: column;
+    transition: background 0.6s linear;
 }
 
 .checkbox{
@@ -40,9 +41,7 @@ body.dark {
     cursor:pointer;
     display: flex;
     justify-content: space-between;
-
     padding: 5px;
-
     height: 25px;
     width: 50px;
     left: 1200px;
@@ -88,11 +87,13 @@ header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-radius: 5px
 }
 
 header .logo img {
     width: 100px;
     height: 100px;
+
 }
 
 header nav ul {
@@ -116,7 +117,7 @@ header nav li a {
 }
 
 header nav li a:hover {
-    color: rgb(245, 245, 245);
+    color: #202020;
     border: solid rgba(153, 112, 112, 0.192) 0px;
     border-radius: 15px;
     background-color: rgb(135, 16, 204);
@@ -131,7 +132,7 @@ header nav li a:hover {
 
 main {
     flex: 1;
-    padding: 50px;
+    padding: 30px;
 }
 
 main h1 {
@@ -146,7 +147,7 @@ main h1 {
 main .separados {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    
 }
 
 .profile {
@@ -154,12 +155,11 @@ main .separados {
     flex-direction: column;
     align-items: center;
     border-radius: 15px;
-    padding: 0px;
     background-color: black;
     max-width: 300px;
     box-shadow: 0.4s;
     transition: 0.4s;
-    margin-left: 55px;
+    margin-left: 50px;
 }
 
 .profile:hover {
@@ -192,4 +192,5 @@ main .separados {
 main .separados .links {
     text-decoration: none;
 }
+
 
