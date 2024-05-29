@@ -19,6 +19,10 @@ body {
 
 body.dark {
     background-image: url(../assets/backdark.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    transition: background 0.2s linear;
 }
 
 .checkbox{
