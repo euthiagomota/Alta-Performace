@@ -18,12 +18,13 @@ body {
 }
 
 body.dark {
-    background: #232c35;
+    background: #291c2f;
 }
 
 .checkbox{
     opacity: 0;
     position: absolute;
+    display: grid;
 }
 
 .label{
@@ -36,10 +37,10 @@ body.dark {
     justify-content: space-between;
 
     padding: 5px;
-    position: relative;
+    position:absolute;
     height: 25px;
     width: 50px;
-    left: 1800px;
+    left: 1200px;
 
     transform: scale(1.5);
 }
@@ -69,6 +70,11 @@ body.dark {
 .fa-sun{
 
     color: #f39c12;
+}
+
+body .dark-mode-switch {
+    position: absolute;
+    margin-top: 170px;
 }
 
 header nav {
@@ -101,11 +107,11 @@ header nav li a {
     padding: 8px 15px;
     border-radius: 15px;
     transition: 0.4s;
-    color: rgb(217, 127, 255);
+    color: rgb(245, 245, 245);
 }
 
 header nav li a:hover {
-    color: #202020;
+    color: rgb(245, 245, 245);
     border: solid rgba(153, 112, 112, 0.192) 0px;
     border-radius: 15px;
     background-color: rgb(135, 16, 204);
@@ -133,8 +139,8 @@ main h1 {
 }
 
 main .separados {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
 
@@ -170,12 +176,12 @@ main .separados {
 .profile h2 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: #666;
+    color: rgb(214, 214, 214);
 }
 
 .profile p {
     font-size: 16px;
-    color: #666;
+    color: rgb(154, 154, 154);
 }
 
 main .separados .links {
