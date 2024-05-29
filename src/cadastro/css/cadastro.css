@@ -12,6 +12,12 @@ body {
     background-attachment: fixed
   
 }
+
+.logo{
+  padding: 10px;
+  text-align: center;
+}
+
 .logo img{
     width: 100px;
     height: 100px;
