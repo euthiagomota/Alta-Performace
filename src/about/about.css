@@ -18,7 +18,7 @@ body {
 }
 
 body.dark {
-    background: #291c2f;
+    background-image: url(../assets/backdark.png);
 }
 
 .checkbox{
