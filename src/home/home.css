@@ -88,7 +88,7 @@ body.dark {
 }
 
 .fa-moon{
-    color: #f1c40f;
+    color: #f39c12;
 }
 
 .fa-sun{
@@ -185,7 +185,7 @@ header.rolagem nav ul li a::after {
 
 header nav {
     background-color: transparent;
-    padding: 15px 4%;
+    padding: 15px 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -196,9 +196,39 @@ header .logo img {
     width: 100px;
     height: 100px;
     margin: 10px;
-    margin-left: -40px;
+    margin-left: 0px;
     display: flex;
 
+}
+.navbar-search {
+    display: flex;
+}
+
+.navbar-search input{
+    font-size: 16px;
+}
+.navbar-search input[type="text"] {
+    padding: 10px 65px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.navbar-search button {
+    padding: 10px 10px;
+    border: none;
+    background-color: #0080ff;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.navbar-search button .material-icons {
+    font-size: 25px;
+}
+
+.navbar-search button:hover {
+    background-color: #0054a8;
 }
 
 header nav ul {
@@ -207,13 +237,18 @@ header nav ul {
     list-style: none;
 }
 
+header nav ul li {
+   padding: 0;
+   margin-left: 0px;
+}
+
 header nav ul li a {
     margin-left: 15px;
     color: #505050;
-    font-size: 19px;
+    font-size: 17px;
     font-weight: bolder;
     text-decoration: none;
-    margin-left: 65px;
+    margin-left: 50px;
     margin-right: 15px;
     position: relative;
 }

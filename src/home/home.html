@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/logo-preta.png" type="icon">
+    <!-- Icones -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href="./home.css">
     <title>Loja Gamer</title>
 </head>
@@ -14,26 +17,37 @@
     <header id="header">
         <nav>
             <div class="logo">
-                <a href="about.html"><img src="../assets/logo.png" alt="Logo Loja Gamer"></a>
+                <a href="home.html"><img src="../assets/logo.png" alt="Logo Loja Gamer"></a>
             </div>
+
+            <div class="navbar-search">
+                <input type="text" placeholder="Pesquisar...">
+                <button type="submit">
+                    <span class="material-icons">
+                        search
+                        </span>
+                </button>
+            </div>
+            
             <ul>
-                <li><a href="/src/home/home.html">Home</a></li>
                 <li><a href="./about.html">Sobre</a></li>
                 <li><a href="../about/about.html">Colaboradores</a></li>
             </ul>
+            <div class="dark-mode-switch">
+                <input type="checkbox" class="checkbox" id="chk">
+                <label class="label" for="chk">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                    <div class="ball"></div>
+                </label>
+            </div>
+
             <div>
                 <li><a href="/src/cadastro/html/login.html" class="Login">Fazer Login</a></li>
             </div>
         </nav>
     </header>
-    <div class="dark-mode-switch">
-        <input type="checkbox" class="checkbox" id="chk">
-        <label class="label" for="chk">
-            <i class="fas fa-moon"></i>
-            <i class="fas fa-sun"></i>
-            <div class="ball"></div>
-        </label>
-    </div>
+    
  
 
     <section class="banner">  <!-- Imagem do banner -->
