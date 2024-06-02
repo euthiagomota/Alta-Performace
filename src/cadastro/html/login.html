@@ -17,41 +17,39 @@
   </div>
 
   <div class="containerr">
-    <nav>
-      
-      <div class="container">
-        <div class="card">
-          <h1>Entrar</h1>
+    <div class="container">
+      <div class="card">
+        <h1>Entrar</h1>
 
-          <div id="msgError"></div>
-          <div id="msgSucess"></div>
+        <div id="msgError"></div>
 
-          <div class="label-float">
-            <input type="text" id="username" paceholder="" required />
-            <label id="userLabel" for="username">Usuario</label>
-          </div>
-          <div id="divisa">
-            <div class="label-float">
-              <input type="password" id="password" paceholder="" required />
-              <label id="passwordLabel" for="password">Senha</label>
-              <i class="fa fa-eye" aria-hidden="true"></i>
-            </div>
-            <label for="esqueci" class="esqueci"> Esqueceu a <a href="#">senha?</a></label>
-          </div>
-
-          <div class="justify-center">
-            <button onclick="entrar()">Logar</button>
-          </div>
-
-          <div class="cadastro">
-            <h4>Não tem uma conta?</h4>
-            <a href="../html/cadastro.html">Cadastre-se</a>
-          </div>
-          </p>
+        <div class="label-float">
+          <input type="text" id="usuario" paceholder="" required />
+          <label id="userLabel" for="usuario">Usuario</label>
         </div>
-      </div>
 
-      <script src="../js/login.js"></script>
+        <div class="label-float">
+          <input type="password" id="senha" paceholder="" required />
+          <label id="senhaLabel" for="senha">Senha</label>
+          <i class="fa fa-eye" aria-hidden="true"></i>
+        </div>
+
+        <div class="justify-center">
+          <button onclick="entrar()">Entrar</button>
+        </div>
+
+        <div class="justify-center">
+          <hr />
+        </div>
+
+        <p>
+          Não tem uma conta?
+          <a href="/src/cadastro/html/cadastro.html">
+            Cadastre-se
+          </a>
+        </p>
+      </div>
+      <script src="/src/cadastro/js/login.js"></script>
 </body>
 
 </html>

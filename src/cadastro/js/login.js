@@ -1,32 +1,62 @@
-function entrar() {
-  const username = document.getElementById('username').value;
-const usernameLabel = document.getElementById('userLabel')
-const password = document.getElementById('password').value;
-const passwordLabel = document.getElementById('passwordLabel')
-const msgErrorLogin = document.getElementById('msgError');
-const msgSuccessLogin = document.getElementById('msgSucess')
+let btn = document.querySelector('.fa-eye')
 
-// Obtém a lista de usuários do localStorage
-let listaUser = JSON.parse(localStorage.getItem('listaUser') || '[]');
+btn.addEventListener('click', ()=>{
+  let inputSenha = document.querySelector('#senha')
+  
+  if(inputSenha.getAttribute('type') == 'password'){
+    inputSenha.setAttribute('type', 'text')
+  } else {
+    inputSenha.setAttribute('type', 'password')
+  }
+})
 
-// Verifica se o usuário e a senha correspondem a algum cadastro
-let userValid = listaUser.find(user => user.userCad === username && user.senhaCad === password);
-
-
-if (userValid) {
-  msgSuccessLogin.style.display = 'block';
-  msgSuccessLogin.innerHTML = '<strong>Logando...</strong>';
-  msgErrorLogin.style.display = 'none';
-  msgErrorLogin.innerHTML = '';
-
-  setTimeout(() => {
-      window.location.href = '../../home/home.html'; // Redireciona para a página inicial ou dashboard
-  }, 2000);
-} else {
-  msgErrorLogin.style.display = 'block';
-  msgErrorLogin.innerHTML = '<strong>Usuário ou senha incorretos!</strong>';
-  msgSuccessLogin.style.display = 'none';
-  msgSuccessLogin.innerHTML = '';
-}
+function entrar(){
+  let usuario = document.querySelector('#usuario')
+  let userLabel = document.querySelector('#userLabel')
+  
+  let senha = document.querySelector('#senha')
+  let senhaLabel = document.querySelector('#senhaLabel')
+  
+  let msgError = document.querySelector('#msgError')
+  let listaUser = []
+  
+  let userValid = {
+    nome: null,
+    user: null,
+    senha: null
+  }
+  
+  listaUser = JSON.parse(localStorage.getItem('listaUser'))
+  
+  listaUser?.forEach((item) => {
+    if(usuario.value == item.userCad && senha.value == item.senhaCad){
+       
+      userValid = {
+         nome: item.nomeCad,
+         user: item.userCad,
+         senha: item.senhaCad
+       }
+      
+    }
+  })
+   
+  if(usuario.value == userValid.user && senha.value == userValid.senha){
+    window.location.href = '/index.html'
+    
+    let mathRandom = Math.random().toString(16).substr(2)
+    let token = mathRandom + mathRandom
+    
+    localStorage.setItem('token', token)
+    localStorage.setItem('userLogado', JSON.stringify(userValid))
+  } else {
+    userLabel.setAttribute('style', 'color: red')
+    usuario.setAttribute('style', 'border-color: red')
+    senhaLabel.setAttribute('style', 'color: red')
+    senha.setAttribute('style', 'border-color: red')
+    msgError.setAttribute('style', 'display: block')
+    msgError.innerHTML = 'Usuário ou senha incorretos'
+    usuario.focus()
+  }
   
 }
+
