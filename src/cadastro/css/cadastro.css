@@ -6,7 +6,7 @@
     font-family: 'Poppins', sans-serif;
 }
 body {
-    background-image: url("/src/assets/street.jpg");
+    background-image: url("../background/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed
@@ -14,13 +14,18 @@ body {
 }
 
 .logo{
-  padding: 10px;
   text-align: center;
+  padding: 10px;
+  padding-top: 50px;
 }
 
 .logo img{
-    width: 100px;
-    height: 100px;
+  padding-top: 5px;
+  width: 100px;
+  height: 100px;
+  border: solid 2px #ffffff7a;
+  border-radius: 50px;
+  background-color: #ffffff57;
 }
 
 .container {
@@ -31,10 +36,12 @@ body {
   }
   
   .card {
-    background-color: #ffffff80;
+    background-color: #ffffff;
     padding: 30px;
-    border-radius: 4%;
-    box-shadow: 3px 3px 1px 0px #00000060;
+    border: solid 4px;
+    border-color: #2157ce;
+    border-radius: 15px;
+    box-shadow: 3px 3px 1px 3px #5c5b5b60;
     width: 400px;
   }
   
@@ -88,21 +95,21 @@ body {
   }
   
   button{
-    background-color: transparent;
-    border-color: #0d009c;
-    color: #0d009c;
-    padding: 7px;
+    background-color: #2157ce;
+    border: solid 1px #a3a3a3;
+    color: #ffffff;
+    padding: 10px 20px;
+    margin-top: 25px;
     font-weight: bold;
-    font-size: 12pt;
-    margin-top: 20px;
-    border-radius: 4px;
+    font-size: 15pt;
+    border-radius: 10px;
     cursor: pointer;
     outline: none;
     transition: all .4s ease-out;
   }
   
   button:hover{
-    background-color: #0d009c;
+    background-color: rgba(33, 88, 206, 0.438);
     color: #fff;
   }
   

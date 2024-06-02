@@ -1,27 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja</title>
-    <link rel="stylesheet" href="home.css">
-    <link rel="shortcut icon" href="/src/assets/logo-preta.png" type="icon">
+    <link rel="shortcut icon" href="../assets/logo-preta.png" type="icon">
+    <link rel="stylesheet" href="./home.css">
+    <title>Loja Gamer</title>
 </head>
+
 <body>
-    <nav>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="about.html"><img src="../assets/logo.png" alt="Logo Loja Gamer"></a>
+            </div>
+            <ul>
+                <li><a href="/src/home/home.html">Home</a></li>
+                <li><a href="./about.html">Sobre</a></li>
+                <li><a href="./about.html">Colaboradores</a></li>
+            </ul>
+            <div>
+                <li><a href="/src/cadastro/html/login.html" id="Login">Login</a></li>
+            </div>
+        </nav>
+    </header>
+    <div class="dark-mode-switch">
+        <input type="checkbox" class="checkbox" id="chk">
+        <label class="label" for="chk">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <div class="ball"></div>
+        </label>
+    </div>
+ 
 
-        <div class="logo">
-            <a href="index.html"><img src="../assets/Simple_Black_and_White_Events_Logo-removebg-preview.png" alt=""></a>
-        </div>
+    <section class="banner">
+        <!-- Imagem do banner -->
+    </section>
 
-        <ul>
-            <li> <a href="./home.html"> Home </a> </li>
-                <li> <a href="#"> Sobre </a> </li>
-                <li> <a href="../about/about.html"> Colaboradores </a> </li>
-                <li> <a href="/src/cadastro/html/login.html"> Login </a> </li>
-        </ul>
+    <footer>
+        <!-- Conteúdo do rodapé -->
+    </footer>
 
-    </nav>
-    <section class="banner"> </section>
+    <script src="https://kit.fontawesome.com/998c60ef77.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>

@@ -7,20 +7,25 @@
 }
 
 body {
-  background-image: url("/src/assets/tt.png");
+  background-image: url("../background/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed
-  
-}
-.logo {
-text-align: center;
-padding: 10px;
 }
 
-.logo img{
-    width: 100px;
-    height: 100px;
+.logo {
+  text-align: center;
+  padding: 10px;
+  padding-top: 50px;
+}
+
+.logo img {
+  padding-top: 5px;
+  width: 100px;
+  height: 100px;
+  border: solid 2px #ffffff7a;
+  border-radius: 50px;
+  background-color: #ffffff57;
 }
 
 .container {
@@ -31,48 +36,61 @@ padding: 10px;
 }
 
 .card {
-  background-color: #0f0114b2;
+  background-color: rgba(255, 255, 255);
   padding: 60px;
   height: 380px;
-  border-radius: 40px;
-  box-shadow: 3px 3px 1px 0px #00000060
-
+  border: solid 4px;
+  border-color: #2157ce;
+  border-radius: 15px;
+  box-shadow: 3px 3px 1px 3px #5c5b5b60;
+  margin-top: 35px;
 }
 
-h1{
+h1 {
   text-align: center;
-  color: #28a9f3
-  
+  color: #000000
 }
 
-.label-float input{
+.label-float input {
   width: 100%;
   padding: 5px 5px;
   display: inline-block;
   border: 0;
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 2px solid #000000;
   background-color: transparent;
   outline: none;
   min-width: 180px;
   font-size: 19px;
   transition: all .3s ease-out;
   border-radius: 0;
-  
 }
 
-.label-float{
+#divisa {
+  padding: 10px 0px;
+  margin-bottom: 0px;
+}
+
+.esqueci {
+  color: #000000;
+}
+
+a label span {
+  color: #2157ce;
+}
+
+.label-float {
   position: relative;
   padding-top: 13px;
   margin-top: 5%;
   margin-bottom: 5%;
 }
 
-.label-float input:focus{
+.label-float input:focus {
   border-bottom: 2px solid #4038a0;
 }
 
-.label-float label{
-  color: #0c8ad3;
+.label-float label {
+  color: #274353;
   pointer-events: none;
   position: absolute;
   top: 0;
@@ -81,75 +99,79 @@ h1{
   transition: all .3s ease-out;
 }
 
-.label-float input:focus + label,
-.label-float input:valid + label{
+.label-float input:focus+label,
+.label-float input:valid+label {
   font-size: 13px;
   margin-top: 0;
   color: #4038a0
 }
 
-button{
-  background-color: transparent;
-  border: solid 1px #fff;
-  color: #0c8ad3;
-  padding: 12px;
+button {
+  background-color: #2157ce;
+  border: solid 1px #a3a3a3;
+  color: #ffffff;
+  padding: 12px 25px;
   font-weight: bold;
-  font-size: 12pt;
+  font-size: 15pt;
   border-radius: 10px;
   cursor: pointer;
   outline: none;
   transition: all .4s ease-out;
 }
 
-button:hover{
-  background-color:  #2157ce;
+button:hover {
+  background-color: #2158ce75;
   border: solid 1px rgba(0, 0, 0, 0);
-  color: #fff;
+  color: #ffffff80;
 }
 
-.justify-center{
+.justify-center {
   display: flex;
   justify-content: center;
   padding: 25px;
   margin-top: 50px;
-  
+
 }
 
-hr{
-  height: 1px;
-  width: 65%;
-  background-color: #fff;
-  margin-top: -55px;
+.cadastro {
+  padding-top: 28px;
 }
 
-p{
-  color: #b212da;
-  font-size: 20px;
+.cadastro h4 {
+  color: #000000;
+  font-size: 15px;
   text-align: center;
-  display: flex;
-  margin-top: -35px;
+  display: inline-block
 }
 
-a{
-  color: #b212da;
+.cadastro a {
+  color: #2157ce;
+}
+
+.cadastro h4 a {
+  margin: 2px;
+}
+
+a {
+  color: black;
   font-weight: bold;
   text-decoration: none;
   transition: all .3s ease-out;
 }
 
-a:hover{
-  color: #fff;
+a:hover {
+  color: #5a73ff;
 }
 
-.fa-eye{
+.fa-eye {
   position: absolute;
   top: 15px;
   right: 10px;
   cursor: pointer;
-  color: #db0eca;
+  color: #2157ce;
 }
 
- #msgError{
+#msgError {
   text-align: center;
   color: #ff0000;
   background-color: #ffbbbb;

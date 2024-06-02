@@ -77,7 +77,7 @@ confirmSenha.addEventListener('keyup', () => {
   }
 })
 
-function cadastrar(){
+export function cadastrar(){
   if(validNome && validUsuario && validSenha && validConfirmSenha){
     let listaUser = JSON.parse(localStorage.getItem('listaUser') || '[]')
     
@@ -129,8 +129,3 @@ btnConfirm.addEventListener('click', ()=>{
     inputConfirmSenha.setAttribute('type', 'password')
   }
 })
-
-
-
-  
-  
