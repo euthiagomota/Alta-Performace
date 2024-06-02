@@ -14,7 +14,7 @@ body {
 
     display: flex;
     flex-direction: column;
-    transition: background 0.6s linear;
+    transition: background 0.4s linear;
 }
 
 body.dark {
@@ -23,7 +23,7 @@ body.dark {
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    transition: background 0.6s linear;
+    transition: background 0.4s linear;
 }
 
 .checkbox{
