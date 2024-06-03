@@ -155,16 +155,6 @@ header.rolagem nav ul li a:hover::after {
     width: 100%;
 }
 
-header.rolagem nav ul li a::after {
-    content: " ";
-    width: 0%;
-    height: 4px;
-    background-color: #505050;
-    position: absolute;
-    bottom: -3px;
-    left: 0;
-    transition: 0.5s ease-in-out;
-}
 
 .dark header.rolagem{
     background-color: #111111a6;
@@ -243,7 +233,7 @@ header nav ul li {
 header nav ul li a {
     margin-left: 15px;
     color: #505050;
-    font-size: 17px;
+    font-size: 22px;
     font-weight: bolder;
     text-decoration: none;
     margin-left: 50px;
@@ -316,6 +306,7 @@ footer {
     width: 100%;
     position:static;
     margin-top: 50%;
+    margin-top: 20%;
 }
 
 footer .footer-content {
@@ -363,28 +354,22 @@ main .produto {
     align-items: center;
     border-radius: 15px;
     background-color: rgba(255, 255, 255, 0.753);
-    max-width: 300px;
+    max-width: 290px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.4s, box-shadow 0.4s; 
-    margin-left: 10px;
+    margin-left: 5%;
     padding: 15px;
 }
 
 
-.card-one {
-    background-color: rgb(0, 52, 61);
-    padding: 20px;
-    margin-left: 30px;
-    margin-right: 50px;
-    border-radius: 10px;
+main #card-total {
+    background-color: #202020;
+    padding: 10px;
+    border-radius: 30px;
     margin-bottom: 20px;
 }
 
-.card-one h1 {
-    color: white;
-}
-
-.main .card-two {
+main .card-two {
     margin-top: 40px;
     padding: 20px;
 }
@@ -417,12 +402,33 @@ main .produto h1 {
     color: #202020;
 }
 
+main .card-two, .card-one h1{
+    font-size: 60px;
+    text-align: center;
+    color: #fff;
+}
+
 main .produto p {
     font-size: 16px;
     color: rgb(39, 218, 16);
 }
 
 main .produto:hover {
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); 
+    box-shadow: 15px 15px 20px rgba(236, 16, 16, 0.2); 
     transform: translateY(-5px);
+}
+
+header #logado{
+    margin-left: 15px;
+    color: #505050;
+    font-size: 23px;
+    font-weight: bolder;
+    text-decoration: none;
+    margin-left: 50px;
+    margin-right: 200px;
+    position: relative;
+}
+
+.dark #logado {
+    color: white;
 }
