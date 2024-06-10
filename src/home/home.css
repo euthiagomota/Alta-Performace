@@ -181,11 +181,10 @@ header.rolagem nav ul li a::after {
 
 header {
     width: 100%;
-    position: fixed;
 }
 
 header nav {
-    background-color: #c5ebfda2;
+    background-color: #71bac0;
     padding: 5px 5%;
     display: flex;
     justify-content: space-between;
@@ -270,6 +269,10 @@ header nav ul li a {
     width: 100%;
 }
 
+.dark header nav {
+    background-color: #181818b5;
+}
+
 header nav ul li a::after {
     content: " ";
     width: 0%;
@@ -333,11 +336,12 @@ footer .footer-content {
 
 footer .footer-section {
     flex: 1;
-    padding: 20px;
+    padding: 10px;
 }
 
-footer .footer-section h3 {
-    margin-bottom: 20px;
+footer .footer-section img {
+    width: 60px;
+    
 }
 
 footer .footer-section p,
@@ -352,11 +356,16 @@ footer .footer-section ul {
 }
 
 footer .footer-section ul li {
-    margin-bottom: 10px;
+    margin-bottom: 10px 20px;
 }
 
+footer .footer-section ul li :hover{
+    color: white;
+}
+
+
 footer .footer-section.social a {
-    margin: 0 10px;
+    margin: 10px 10px;
     font-size: 1.5em;
     color: #ddd;
 }
@@ -365,73 +374,87 @@ footer .footer-section.social a:hover {
     color: #fff;
 }
 
-main .produto {
-    justify-content: space-between;
+.produto {
     display: inline-block;
     border-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.753);
+    background-color: rgba(255, 255, 255, 0.281);
     max-width: 280px;
     transition: transform 0.4s, box-shadow 0.4s;
-    margin: 40px;
+    margin: 10px;
     padding: 15px;
+    text-align: center;
 }
 
+.produto img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.produto h1 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #f9f9f9;
+}
+
+.produto h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: rgb(39, 218, 16);
+}
+
+.produto h3 {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: rgb(218, 24, 24);
+}
+
+.produto p {
+    font-size: 16px;
+    color: rgb(39, 218, 16);
+}
+
+.produto:hover {
+    box-shadow: 0px 0px 30px rgb(11, 97, 194);
+    transform: translateY(-10px);
+}
+
+/* Estilo do contêiner total */
 #card-total {
-    background-color: rgb(0, 52, 61);
+    background-color: rgba(8, 21, 56, 0.626);
     padding: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-one, .card-two {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card-two {
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 15px;
 }
 
 .card-one h1 {
     color: white;
 }
 
-.main .card-two {
-    margin-top: 40px;
+#logado {
+    font-size: 18px;
+    display: inline;
+    margin-left: -45%;
+    color: #0055b7;
     padding: 20px;
 }
 
-main .produto img {
-    width: 100%;
-    height: 30%;
-    border-radius: 15px;
-}
-
-main .produto .texto {
-    text-align: center;
-}
-
-main .produto h3 {
-    font-size: 14px;
-    margin-bottom: 5px;
-    color: rgb(218, 24, 24);
-}
-
-main .produto h2 {
-    font-size: 24px;
-    margin-bottom: 5px;
-    color: rgb(39, 218, 16);
-}
-
-main .produto h1 {
-    font-size: 20px;
-    margin-bottom: 5px;
-    color: #202020;
-}
-
-main .produto p {
-    font-size: 16px;
-    color: rgb(39, 218, 16);
-}
-
-main .produto:hover {
-    box-shadow: 0px 0px 30px rgb(11, 97, 194);
-    transform: translateY(-10px);
-}
-
-#logado {
-    font-size: 23px;
-    display: inline;
-    margin-left: -20%;
+.dark #logado {
+    color: #0a7dff;
 }
 
 /* responsividade usando @media */
@@ -439,12 +462,6 @@ main .produto:hover {
 @media (max-width: 1200px) {
     .label {
         transform: scale(1.2);
-        left: 85%;
-    }
-
-    .dark-mode-switch {
-        left: 90%;
-        top: -90px;
     }
 
     section h1 {
@@ -456,12 +473,12 @@ main .produto:hover {
         padding: 10px 50px;
     }
 
-    header .logo img {
+    .logo img {
         width: 80px;
         height: 80px;
     }
 
-    header nav ul li a {
+    nav ul li a {
         margin-left: 30px;
     }
 }
@@ -469,12 +486,6 @@ main .produto:hover {
 @media (max-width: 992px) {
     .label {
         transform: scale(1);
-        left: 80%;
-    }
-
-    .dark-mode-switch {
-        left: 88%;
-        top: -70px;
     }
 
     section h1 {
@@ -486,16 +497,16 @@ main .produto:hover {
         padding: 10px 40px;
     }
 
-    header .logo img {
+    .logo img {
         width: 70px;
         height: 70px;
     }
 
-    header nav ul li a {
+    nav ul li a {
         margin-left: 20px;
     }
 
-    main .banner img {
+    .banner img {
         width: 100%;
     }
 }
@@ -503,12 +514,6 @@ main .produto:hover {
 @media (max-width: 768px) {
     .label {
         transform: scale(0.8);
-        left: 75%;
-    }
-
-    .dark-mode-switch {
-        left: 85%;
-        top: -50px;
     }
 
     section h1 {
@@ -520,47 +525,42 @@ main .produto:hover {
         padding: 10px 30px;
     }
 
-    header .logo img {
+    .logo img {
         width: 60px;
         height: 60px;
     }
 
-    header nav ul {
+    nav ul {
         flex-direction: column;
     }
 
-    header nav ul li {
+    nav ul li {
         margin: 10px 0;
     }
 
-    main .banner img {
+    .banner img {
         width: 100%;
     }
 
-    footer .footer-content {
+    .produto {
+        max-width: 90%;
+        margin: 20px auto;
+    }
+
+    .footer-content {
         flex-direction: column;
         align-items: center;
     }
 
-    footer .footer-section {
+    .footer-section {
         width: 100%;
         text-align: center;
-    }
-
-    footer .footer-section ul {
-        padding-left: 0;
     }
 }
 
 @media (max-width: 576px) {
     .label {
         transform: scale(0.6);
-        left: 70%;
-    }
-
-    .dark-mode-switch {
-        left: 80%;
-        top: -30px;
     }
 
     section h1 {
@@ -572,32 +572,31 @@ main .produto:hover {
         padding: 10px 20px;
     }
 
-    header .logo img {
+    .logo img {
         width: 50px;
         height: 50px;
     }
 
-    header nav ul {
+    nav ul {
         flex-direction: column;
         align-items: center;
     }
 
-    header nav ul li a {
+    nav ul li a {
         margin-left: 0;
         margin-bottom: 10px;
     }
 
-    main .banner img {
+    .banner img {
         width: 100%;
     }
 
-    main .produto {
+    .produto {
         max-width: 90%;
         margin: 20px auto;
     }
 
-    #logado {
-        font-size: 18px;
+    .user-info h2 {
         margin-left: 0;
     }
 }
