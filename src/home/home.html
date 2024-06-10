@@ -27,7 +27,7 @@
             </div>
 
             <ul>
-                <li><a href="./about.html">Sobre</a></li>
+                <li><a href="../Sobre/sobre.html">Sobre</a></li>
                 <li><a href="../about/about.html">Colaboradores</a></li>
             </ul>
 
@@ -48,9 +48,20 @@
 
     <main>
         <section class="banner-carousel">
-            <div class="banner">
-                <img src="../assets/Banner para loja virtual ecommerce periféricos dropshiping.png" alt="Banner 1">
+            <div class="carousel-container">
+                <div class="banner">
+                    <img src="../assets/Banner para loja virtual ecommerce periféricos dropshiping.png" alt="Banner 1">
+                </div>
+                <div class="banner">
+                    <img src="../assets/Banner2.png" alt="Banner 2">
+                </div>
+                <div class="banner">
+                    <img src="../assets/Banner3.png" alt="Banner 3">
+                </div>
+                <!-- Adicione mais banners conforme necessário -->
             </div>
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
         </section>
 
         <section id="card-total">
@@ -149,14 +160,14 @@
                     <img src="../assets/logo.png" alt="">
                     <p>Endereço: Rua da Catedral, 2009</p>
                     <p>Telefone: (81) 98202-8337</p>
-                    <p>Email: contato@lojagamer.com.br</p>
+                    <p>Email: contato@lumatika.com.br</p>
                 </div>
                 <div class="footer-section links">
                     <h3>Links Rápidos</h3>
                     <ul>
-                        <li><a href="#">Sobre</a></li>
-                        <li><a href="#">Produtos</a></li>
-                        <li><a href="#">Contato</a></li>
+                        <li><a href="../Sobre/sobre.html">Sobre</a></li>
+                        <li><a href="./home.html">Produtos</a></li>
+                        <li><a href="../about/about.html">Colaboradores</a></li>
                     </ul>
                 </div>
                 <div class="footer-section social">
@@ -176,6 +187,7 @@
     <script src="/src/cadastro/js/index.js"></script>
     <script src="home.js"></script>
     <script src="nav.js"></script>
+    <script src="./carrossel.js"></script>
 </body>
 
 </html>

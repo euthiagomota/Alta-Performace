@@ -9,7 +9,7 @@
 
 body {
     background-image: url(../cadastro/background/background.jpg);
-    background-size: cover;
+    background-size:auto
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -105,11 +105,6 @@ header.rolagem {
     background-color: #ffffff;
 }
 
-.logo img {
-    border-radius: 50px;
-    background-color: #ffffff57;
-}
-
 header.rolagem ul li a {
     color: #2157ce
 }
@@ -167,12 +162,12 @@ header.rolagem nav ul li a::after {
 }
 
 .dark header.rolagem {
-    background-color: #111111a6;
+    background-color: #111111ce;
 }
 
 .dark header.rolagem .logo img {
     border-radius: 50px;
-    background-color: #ffffff57;
+    background-color: #ffffff;
 }
 
 .dark header.rolagem ul li a {
@@ -184,7 +179,7 @@ header {
 }
 
 header nav {
-    background-color: #71bac0;
+    background-color: #00a497;
     padding: 5px 5%;
     display: flex;
     justify-content: space-between;
@@ -245,7 +240,7 @@ header nav ul li {
 
 header nav ul li a {
     margin-left: 15px;
-    color: #505050;
+    color: #ffffff;
     font-size: 17px;
     font-weight: bolder;
     text-decoration: none;
@@ -270,14 +265,14 @@ header nav ul li a {
 }
 
 .dark header nav {
-    background-color: #181818b5;
+    background-color: #151515cc;
 }
 
 header nav ul li a::after {
     content: " ";
     width: 0%;
     height: 4px;
-    background-color: #505050;
+    background-color: #005285;
     position: absolute;
     bottom: -3px;
     left: 0;
@@ -309,13 +304,45 @@ main .banner-carousel {
     margin-top: 160px;
     margin-left: 5%;
     margin-bottom: 30px;
+    position: relative;
     overflow: hidden;
+}
+
+main .carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+main .banner {
+    min-width: 100%;
+    box-sizing: border-box;
 }
 
 main .banner img {
     width: 90%;
     border-radius: 20px;
-    display: flex;
+}
+
+main .banner-carousel .prev, 
+main .banner-carousel .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    margin-right: 10%;
+}
+
+main .banner-carousel .prev {
+    left: 10px;
+}
+
+main .banner-carousel .next {
+    right: 10px;
 }
 
 footer {
@@ -448,9 +475,9 @@ footer .footer-section.social a:hover {
 #logado {
     font-size: 18px;
     display: inline;
-    margin-left: -45%;
+    margin-left: -15%;
     color: #0055b7;
-    padding: 20px;
+    padding: 45px;
 }
 
 .dark #logado {
