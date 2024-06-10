@@ -9,7 +9,7 @@
 
 body {
     background-image: url(../cadastro/background/background.jpg);
-    background-size:auto
+    background-size:auto;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
