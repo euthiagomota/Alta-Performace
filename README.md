@@ -21,5 +21,5 @@ Equipe de desenvolvimento do projeto e suas respectivas  matrículas:
 
 * **Thiago Mota - 01587816** - *Desenvolvedor* - [Github](https://github.com/euthiagomota)
 * **Lucas Miguel - 01601160** - *Desenvolvedor* - [GitHub](https://github.com/1Lucas5)
-* **Kayo Vinicius - 01590486s** - *Desenvolvedor* - [GitHub](https://github.com/kaka2099)
+* **Kayo Vinicius - 01590486** - *Desenvolvedor* - [GitHub](https://github.com/kaka2099)
 * **Marcio Maycom - 01607574** - *Desenvolvedor* - [GitHub](https://github.com/mihaeldatoman)
